@@ -39,8 +39,16 @@ namespace SnakeAndLadder
                 case 3:
                     Console.WriteLine("Snake..."); //this case is for SNAKE
                     position = position - diceValue;
+                    Position();
                     Console.WriteLine("POSITION: " + position);
                     break;
+            }
+        }
+        public static void Position() //UC4
+        {
+            if (position < 0)  //condition to check wheter position is lss than 0
+            {
+                position = 0; //if position value is negative then we are assigning 0 to 
             }
         }
     }
