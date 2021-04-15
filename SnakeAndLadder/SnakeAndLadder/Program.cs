@@ -6,6 +6,7 @@ namespace SnakeAndLadder
     {
         static int position = 0;
         const int Max_Position = 100;
+        static int count = 0;
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to SNAKE AND LADDER");
@@ -13,6 +14,7 @@ namespace SnakeAndLadder
             {
                 DiceRoll(); //Calling the Dice Roll method
             }
+            Console.WriteLine("\nNumber of games: " + count);
 
         }
 
@@ -35,18 +37,21 @@ namespace SnakeAndLadder
                 case 1:
                     Console.WriteLine("No Play!!!!");   //this case for NO PLAY
                     Console.WriteLine("POSITION: " + position);
+                    count++;
                     break;
                 case 2:
                     Console.WriteLine("Ladder..."); //this case is for LADDER
                     position = position + diceValue;
                     Position(diceValue);
                     Console.WriteLine("POSITION: " + position);
+                    count++;
                     break;
                 case 3:
                     Console.WriteLine("Snake..."); //this case is for SNAKE
                     position = position - diceValue;
                     Position(diceValue);
                     Console.WriteLine("POSITION: " + position);
+                    count++;
                     break;
             }
         }
