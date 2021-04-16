@@ -17,7 +17,7 @@ namespace SnakeAndLadder
             while (player1_Position < Max_Position && player2_Position < Max_Position)//to Execute until reach 100th Position
             {
                 Player1();
-                if(player1_Position < Max_Position)
+                if(player1_Position < Max_Position) //To check whether player1 reaches to last position
                 {
                     Player2();
                 }
@@ -79,35 +79,35 @@ namespace SnakeAndLadder
             return Position;
         }
 
-        public static void Player1()
+        public static void Player1()        //for Player1
         {
-            int diceValue = DiceRoll();
+            int diceValue = DiceRoll();     //calling DiceRoll method to generate dice value
             Console.WriteLine("Player1 Dice Value" + diceValue);
-            player1_Position = CheckOption(diceValue,player1_Position);
+            player1_Position = CheckOption(diceValue,player1_Position); //checking option for Snake ladder or No Play
             Console.WriteLine("Player1 Current Position: " + player1_Position);
-            if (player1_Position == Max_Position)
+            if (player1_Position == Max_Position) //if Player 1 position reaches to max position then players1 wins
             {
                 Console.WriteLine("------PLAYER1 WIN-----");
 
             }
-            else if(option == ladder)
+            else if(option == ladder) //if player gets ladder then he must play again
             {
-                Player1();
+                Player1(); //calling mathod to play again //it's Recursion method
             }
         }
         public static void Player2()
         {
-            int diceValue = DiceRoll();
+            int diceValue = DiceRoll();     //calling DiceRoll method to generate dice value
             Console.WriteLine("Player2 Dice Value" + diceValue);
-            player2_Position = CheckOption(diceValue,player2_Position);
+            player2_Position = CheckOption(diceValue,player2_Position);     //checking option for Snake ladder or No Play
             Console.WriteLine("Player2 Current Position: " + player2_Position);
-            if (player2_Position == Max_Position)
+            if (player2_Position == Max_Position)   //if Player 2 position reaches to max position then players1 wins
             {
                 Console.WriteLine("------PLAYER2 WIN-----");
             }
-            else if (option == ladder)
+            else if (option == ladder)//if player gets ladder then he must play again
             {
-                Player2();
+                Player2();//calling mathod to play again //it's Recursion method
             }
         }
     }
