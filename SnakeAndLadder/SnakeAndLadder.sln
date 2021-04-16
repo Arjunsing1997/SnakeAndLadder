@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeAndLadder", "SnakeAndLadder\SnakeAndLadder.csproj", "{E5227166-3D10-4459-B1F3-DF2697488CAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeAndLadder", "SnakeAndLadder\SnakeAndLadder.csproj", "{E5227166-3D10-4459-B1F3-DF2697488CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{AEE841C8-BD9C-48D3-A923-F3CF7BEB2CAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E5227166-3D10-4459-B1F3-DF2697488CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5227166-3D10-4459-B1F3-DF2697488CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5227166-3D10-4459-B1F3-DF2697488CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE841C8-BD9C-48D3-A923-F3CF7BEB2CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE841C8-BD9C-48D3-A923-F3CF7BEB2CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE841C8-BD9C-48D3-A923-F3CF7BEB2CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE841C8-BD9C-48D3-A923-F3CF7BEB2CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
