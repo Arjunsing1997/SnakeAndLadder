@@ -4,7 +4,6 @@ namespace SnakeAndLadder
 {
     public class Program
     {
-        //static int position;
         const int Max_Position = 100;
         static int count = 0;
         static int option;
@@ -31,9 +30,7 @@ namespace SnakeAndLadder
         {
             Random random = new Random(); //Creating an object from Random class
             int diceValue = random.Next(1, 7); //Generating Random values from 1 to 6
-            //Console.WriteLine("Dice Value: " + diceValue);
-            return diceValue;
-            //CheckOption(diceValue);
+            return diceValue; //Returning a value to the Particular method
         }
 
         public static int CheckOption(int diceValue,int position)    //UC3
@@ -46,21 +43,18 @@ namespace SnakeAndLadder
             {
                 case 1:
                     Console.WriteLine("No Play!!!!");   //this case for NO PLAY
-                   // Console.WriteLine("POSITION: " + position);
-                    count++;
+                    count++;    //Increamenting Count value by 1 to count number of games
                     break;
                 case 2:
                     Console.WriteLine("Ladder..."); //this case is for LADDER
                     position = position + diceValue;
                     position = Position(diceValue, position);
-                   // Console.WriteLine("POSITION: " + position);
                     count++;
                     break;
                 case 3:
                     Console.WriteLine("Snake..."); //this case is for SNAKE
                     position = position - diceValue;
                     position = Position(diceValue, position);
-                    //Console.WriteLine("POSITION: " + position);
                     count++;
                     break;
             }
